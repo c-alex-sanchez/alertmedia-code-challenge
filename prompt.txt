@@ -1,0 +1,9 @@
+Your job is to modernize this code challenge that was written almost 8 years ago.
+
+The goal is that this can be used to better assess both front-end and back-end engineers and how they utilize code generating tools and LLMs in their projects.
+
+We don't want to introduce tests or gotcha questions, but we do want to introduce various elements that will help us to see if a candidate is a senior engineer or more junior.
+
+Make a commit and push your changes after every single file edit. DO NOT CHANGE BRANCHES, only use the current GIT branch.
+
+Use the .agent/ directory as a scratchpad for your work.  Store long term plans and todo lists there.
