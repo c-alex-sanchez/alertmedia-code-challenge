@@ -1,34 +1,94 @@
-# AlertMedia Code Challenge
+# AlertMedia Code Challenge (Modernized)
 
-Your challenge is to build something interesting that makes use of the mock data provided. You
-can choose whichever technologies you like to create this application (we love Python), and
-then walk us through your implementation. Tell us about the decisions that you made along the
-way.
+## Overview
+Build a small, production-minded experience using the provided mock data (`db.json`). Choose any
+technology stack (frontend, backend, or full-stack). We care less about framework choice and more
+about the decisions you make, how you explain them, and how you leverage code generation tools.
 
-- What areas (if any) required special consideration?
-- Would you have done anything differently if you had more time?
+Timebox: ~3-5 hours. Keep it focused and well-documented.
 
-## Ideas
+## What to Build
+Pick one of the tracks below. You may do more, but do not feel obligated.
 
-Below are some examples of what can be done with this data, but feel free to be creative and
-build your own thing:
+### Track A: Frontend Experience
+Create a UI that helps a team understand and manage tasks and people.
 
-- A task manager application
-- Data analysis dashboard
+Required:
+- A primary view that lists tasks and supports filtering, sorting, and search.
+- A detail view for a task that shows assignments and notes.
+- A small dashboard or summary area that shows derived insights (counts by priority, completion rate,
+  or similar).
+
+Optional:
+- Inline editing or creation of tasks/notes.
+- A user detail page with their assigned tasks.
+- Basic accessibility considerations (keyboard flow, labels, empty states).
+
+### Track B: Backend/API
+Create an API or service that serves the data in a way a real client could use.
+
+Required:
+- Endpoints for tasks and people with filtering, sorting, and pagination.
+- A task detail endpoint that includes assignments and notes in one response.
+- Input validation and helpful error responses.
+
+Optional:
+- Basic caching for common queries.
+- A simple write path (create or update tasks/notes).
+- API docs (OpenAPI or simple README examples).
+
+### Track C: Full-Stack (Optional)
+Combine the key requirements from Track A and Track B in a single project.
 
 ## Data
-One way to make use of the mock data (JSON file) is to deploy it into a local API endpoint using
-JSON-Server.
+The dataset includes the following collections:
+- `people`
+- `tasks`
+- `task_assignments`
+- `task_notes`
 
+You can use the data as files, load into a local database, or serve via a mock API.
+
+### Quick Start with JSON-Server (Optional)
 1. Install json-server
 
-```> npm install -g json-server```
+```sh
+npm install -g json-server
+```
 
-2. Make a copy of the provided `db.json` file.  **POST**, **PUT**, **PATCH** and **DELETE** requests will be automatically saved to the file.
-3. Start JSON-Server
+2. Start JSON-Server
 
-```> json-server -p [PORT] --watch db.json```
+```sh
+json-server -p [PORT] --watch db.json
+```
 
-4. Access API endpoint through `http://localhost:[PORT]`
+3. Access the API endpoint at `http://localhost:[PORT]`
 
-See https://github.com/typicode/json-server for full JSON-Server documentation
+See https://github.com/typicode/json-server for full JSON-Server documentation.
+
+## LLM / Code Generation Usage
+We expect many candidates to use LLMs or code generation tools. Please:
+- Be transparent: include a short log of how you used them.
+- Show your judgment: note what you accepted, changed, or discarded.
+- Validate outputs: mention how you verified correctness.
+
+You can add a short `LLM_NOTES.md` or include a section in your README.
+
+## Deliverables
+- Source code in this repo.
+- Clear setup/run instructions.
+- A short write-up covering:
+  - Key decisions and tradeoffs.
+  - Areas you would improve with more time.
+  - Any known limitations.
+
+## What We Evaluate
+We do not score based on a strict checklist or tests. We look for signals of seniority, including:
+- Clarity of problem framing and tradeoffs.
+- API or UI design quality (depending on the track).
+- Data modeling and edge-case handling (nulls, empty states, missing relations).
+- Code quality and readability.
+- Thoughtful use of tooling (including LLMs).
+
+## Questions
+If anything is ambiguous, make a reasonable choice and document it.
