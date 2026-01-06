@@ -1,12 +1,8 @@
-# Modernization plan
+# Plan
 
-- Review existing challenge artifacts (README, data, prompt).
-- Draft updated challenge goals focused on senior/junior signals, LLM usage, and system design tradeoffs.
-- Add clear deliverables, constraints, and evaluation criteria.
-- Provide optional extensions for frontend and backend depth.
-- Ensure instructions avoid tests/gotchas and stay time-boxed.
-
-# TODO
-
-- Update README with modernized challenge brief and rubric.
-- Consider adding a separate CHALLENGE.md if README gets too long.
+- Review existing challenge context in README.md and prompt.txt.
+- Identify modernization goals: full-stack assessment, LLM usage, seniority signals.
+- Draft updated instructions and rubric guidance.
+- Update README.md and prompt.txt to reflect new scope and expectations.
+- Adjust db.json or add data elements if needed to support new tasks.
+- Iterate: each file edit gets its own commit + push.
